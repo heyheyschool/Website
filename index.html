@@ -3,27 +3,47 @@
 <head>
 <title>Page Title</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Allerta|Ubuntu" rel="stylesheet">
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+	/*var height = document.getElementsByClassName("parallax")[0].offsetHeight;*/
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("secondDiv").className = "slideUp";
+    } 
+
+    if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("secondDiv").className = "slideDown";
+    }
+
+    /*if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("thirdDiv").className = "slideUp";
+    }*/
+}
+</script>
+
 </head>
 <body>
-
 <div class="parallax">
 	<div class="positionDiv">
 		<div class="headerDiv">
-PORTFOLIO TEST
+PORTFOLIO
 		</div>
 	</div>
 </div>
-<div class="secondDiv">
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div class="parallax">
+	<div id="secondDiv">
+	This div is just here to enable scrolling.
+	Tip: Try to remove the background-attachment property to remove the scrolling effect.
+	</div>
 </div>
-
-<div class="thirdDiv">
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div class="parallax">
+	<div id="thirdDiv">
+		Dit is de derde div 
+	</div>
 </div>
-<div class="parallax"></div>
 
 
 </body>
