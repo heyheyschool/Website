@@ -60,13 +60,14 @@ body, html {
 	height: 60%;
     font-size: 20px;
     text-align: center;
-    left: 20%;
+    left: 10%;
+    top: 20%;
     font-family: 'Allerta', sans-serif;
     border-width: 3px;
     border-style: solid;
     border-color: #000;
-    left: 10%;
     margin: auto;
+    position: absolute;
 }
 
 #thirdDiv{
@@ -74,13 +75,14 @@ body, html {
     height: 60%;
     font-size: 20px;
     text-align: center;
-    left: 20%;
+    left: 10%;
+    top: 20%;
     font-family: 'Allerta', sans-serif;
     border-width: 3px;
     border-style: solid;
     border-color: #000;
-    left: 10%;
     margin: auto;
+    position: absolute;
 }
 
 .slideUp {
@@ -149,4 +151,32 @@ body, html {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#primary {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    margin-top: -40px;
+}
+nav#primary li {
+    position: relative;
+    height: 20px;
+}
+nav#primary a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    background: transparent url('../images/nav-dot.png') 4px 4px no-repeat;
+}
+nav#primary a:hover, nav#primary a.active {
+    background: transparent url('../images/nav-dot.png') 4px -16px no-repeat;
 }

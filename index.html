@@ -6,6 +6,42 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Allerta|Ubuntu" rel="stylesheet">
 <script>
+$("document").ready(function() {			
+				
+				var parallax1 = $(".parallax").get(0);
+
+				$('.first').click(function(){
+										   
+					$('html, body').animate({
+						scrollTop: $(".parallax#parallax1").offset().top
+					}, 2000);				   
+					 
+										   
+				 });
+				
+				
+				
+				$('.second').click(function(){
+										   
+					$('html, body').animate({
+						scrollTop: $(".parallax#parallax2").offset().top
+					}, 2000);				   
+					 
+										   
+				 });
+				
+				
+					$('.third').click(function(){
+										   
+					$('html, body').animate({
+						scrollTop: $(".parallax#parallax3").offset().top
+					}, 2000);				   
+					 
+										   
+				 });
+
+});
+
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -26,20 +62,30 @@ function myFunction() {
 
 </head>
 <body>
-<div class="parallax">
+<nav id="primary">
+	<ul>
+		<li>
+		<a class="first" href="#first">View</a>
+		<a class="second" href="#second">View</a>
+		<a class="third" href="#third">View</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="parallax" id="parallax1">
 	<div class="positionDiv">
 		<div class="headerDiv">
 PORTFOLIO
 		</div>
 	</div>
 </div>
-<div class="parallax">
+<div class="parallax" id="parallax2">
 	<div id="secondDiv">
 	This div is just here to enable scrolling.
 	Tip: Try to remove the background-attachment property to remove the scrolling effect.
 	</div>
 </div>
-<div class="parallax">
+<div class="parallax" id="parallax3">
 	<div id="thirdDiv">
 		Dit is de derde div 
 	</div>
