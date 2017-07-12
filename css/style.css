@@ -55,7 +55,7 @@ body, html {
     text-align: center;
 }
 
-#secondDiv{
+.loadingDiv{
     width: 80%;
 	height: 60%;
     font-size: 20px;
@@ -68,21 +68,7 @@ body, html {
     border-color: #000;
     margin: auto;
     position: absolute;
-}
-
-#thirdDiv{
-    width: 80%;
-    height: 60%;
-    font-size: 20px;
-    text-align: center;
-    left: 10%;
-    top: 20%;
-    font-family: 'Allerta', sans-serif;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #000;
-    margin: auto;
-    position: absolute;
+    opacity:0;
 }
 
 .slideUp {

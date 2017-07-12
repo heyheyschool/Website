@@ -42,22 +42,85 @@ $("document").ready(function() {
 
 });
 
-window.onscroll = function() {myFunction()};
+/*window.onscroll = function() {myFunction()};
+    
+    /* Every time the window is scrolled ... */
+    /*function myFunction(){
+    
+        /* Check the location of each desired element */
+        /*$('.loadingDiv').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+         /* if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+     /*   }); 
+
+    }
+    
+   /* }); 
+    
+/*});
+
+/*window.onscroll = function() {myFunction()};
 
 function myFunction() {
-	/*var height = document.getElementsByClassName("parallax")[0].offsetHeight;*/
+	
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("secondDiv").className = "slideUp";
+        document.getElementsByClassName(".secondDiv").className = "slideUp";
     } 
 
     if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        document.getElementById("secondDiv").className = "slideDown";
+        document.getElementsByClassName(".secondDiv").className = "slideDown";
     }
 
-    /*if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        document.getElementById("thirdDiv").className = "slideUp";
-    }*/
+   
+}*/
+
+/*	window.requestAnimationFrame = window.requestAnimationFrame
+ || window.mozRequestAnimationFrame
+ || window.webkitRequestAnimationFrame
+ || window.msRequestAnimationFrame
+ || function(f){setTimeout(f, 1000/60)}*/
+window.onscroll = function() {myFunction()};
+    
+    /* Every time the window is scrolled ... */
+    function myFunction(){
+    
+        /* Check the location of each desired element */
+        $('.loadingDiv').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+
+    }
+
+/*function parallaxbubbles(){
+ 	var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
+ 	$('.loadingDiv#2').offset().top = -scrolltop * .2 + 'px' // move bubble2 at 50% of scroll rate
 }
+
+window.addEventListener('scroll', callback, false);
+
+function callback(){ 
+requestAnimationFrame(parallaxbubbles)
+}*/
+
 </script>
 
 </head>
@@ -80,16 +143,14 @@ PORTFOLIO
 	</div>
 </div>
 <div class="parallax" id="parallax2">
-	<div id="secondDiv">
+	<div class="loadingDiv" id="2">
 	This div is just here to enable scrolling.
 	Tip: Try to remove the background-attachment property to remove the scrolling effect.
 	</div>
 </div>
 <div class="parallax" id="parallax3">
-	<div id="thirdDiv">
+	<div class="loadingDiv">
 		Dit is de derde div 
 	</div>
 </div>
-
-
 </body>
