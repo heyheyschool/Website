@@ -43,63 +43,29 @@ $("document").ready(function() {
 });
 
 /*window.onscroll = function() {myFunction()};
-    
-    /* Every time the window is scrolled ... */
-    /*function myFunction(){
-    
-        /* Check the location of each desired element */
-        /*$('.loadingDiv').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-         /* if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-     /*   }); 
-
-    }
-    
-   /* }); 
-    
-/*});
-
-/*window.onscroll = function() {myFunction()};
 
 function myFunction() {
 	
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementsByClassName(".secondDiv").className = "slideUp";
+        document.getElementById("2").className = "slideUp";
     } 
 
     if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        document.getElementsByClassName(".secondDiv").className = "slideDown";
+        document.getElementById("2").className = "slideDown";
     }
 
    
 }*/
 
-/*	window.requestAnimationFrame = window.requestAnimationFrame
- || window.mozRequestAnimationFrame
- || window.webkitRequestAnimationFrame
- || window.msRequestAnimationFrame
- || function(f){setTimeout(f, 1000/60)}*/
 window.onscroll = function() {myFunction()};
     
-    /* Every time the window is scrolled ... */
     function myFunction(){
     
-        /* Check the location of each desired element */
         $('.loadingDiv').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
                 
                 $(this).animate({'opacity':'1'},500);
@@ -109,17 +75,6 @@ window.onscroll = function() {myFunction()};
         }); 
 
     }
-
-/*function parallaxbubbles(){
- 	var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
- 	$('.loadingDiv#2').offset().top = -scrolltop * .2 + 'px' // move bubble2 at 50% of scroll rate
-}
-
-window.addEventListener('scroll', callback, false);
-
-function callback(){ 
-requestAnimationFrame(parallaxbubbles)
-}*/
 
 </script>
 
@@ -138,7 +93,8 @@ requestAnimationFrame(parallaxbubbles)
 <div class="parallax" id="parallax1">
 	<div class="positionDiv">
 		<div class="headerDiv">
-PORTFOLIO
+P O R T F O L I O
+<button class="button button5">Linkedin</button> <button class="button button5">Twitter</button>
 		</div>
 	</div>
 </div>
