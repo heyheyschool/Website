@@ -1,47 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Portfolio</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Allerta|Ubuntu" rel="stylesheet">
 <script>
-$("document").ready(function() {			
-				
-				var parallax1 = $(".parallax").get(0);
-
-				$('.first').click(function(){
-										   
-					$('html, body').animate({
-						scrollTop: $(".parallax#parallax1").offset().top
-					}, 2000);				   
-					 
-										   
-				 });
-				
-				
-				
-				$('.second').click(function(){
-										   
-					$('html, body').animate({
-						scrollTop: $(".parallax#parallax2").offset().top
-					}, 2000);				   
-					 
-										   
-				 });
-				
-				
-					$('.third').click(function(){
-										   
-					$('html, body').animate({
-						scrollTop: $(".parallax#parallax3").offset().top
-					}, 2000);				   
-					 
-										   
-				 });
-
-});
-
 /*window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -57,7 +21,7 @@ function myFunction() {
    
 }*/
 
-window.onscroll = function() {myFunction()};
+/*window.onscroll = function() {myFunction()};
     
     function myFunction(){
     
@@ -74,7 +38,7 @@ window.onscroll = function() {myFunction()};
             
         }); 
 
-    }
+    }*/
 
 </script>
 
@@ -96,17 +60,22 @@ window.onscroll = function() {myFunction()};
 P O R T F O L I O
 <button class="button button5">Linkedin</button> <button class="button button5">Twitter</button>
 		</div>
-	</div>
 </div>
 <div class="parallax" id="parallax2">
-	<div class="loadingDiv" id="2">
-	This div is just here to enable scrolling.
+	<div class="blackContent">
+		<!--<div class="scrolltop"> 
+    		<h2><div id="scrolltop">Titel van artikel</a></h2>
+				</div>
+		</div>-->
+			This div is just here to enable scrolling.
 	Tip: Try to remove the background-attachment property to remove the scrolling effect.
 	</div>
 </div>
+
 <div class="parallax" id="parallax3">
-	<div class="loadingDiv">
+	<div class="loadingDiv1">
 		Dit is de derde div 
 	</div>
 </div>
+<script src="/js/scrolling.js"></script>
 </body>

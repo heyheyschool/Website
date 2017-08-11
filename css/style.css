@@ -6,7 +6,8 @@ body, html {
 
 .parallax {
     /* The image used */
-    background-image: url('https://forums.unrealengine.com/attachment.php?attachmentid=104896&d=1470406352');
+    /*background-image: url('http://cdn.wallpapersafari.com/32/98/z6tvrF.jpg');*/
+    /*https://forums.unrealengine.com/attachment.php?attachmentid=104896&d=1470406352*/
 
     /* Full height */
     height: 100%; 
@@ -55,7 +56,7 @@ body, html {
     text-align: center;
 }
 
-.loadingDiv{
+.loadingDiv1{
     width: 80%;
 	height: 60%;
     font-size: 20px;
@@ -68,44 +69,63 @@ body, html {
     border-color: #000;
     margin: auto;
     position: absolute;
-    opacity:0;
+    /*opacity:0;*/
 }
 
-.slideUp {
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    visibility: invisible;
+.blackContent{
+        width: 80%;
+    height: 60%;
+    font-size: 20px;
+    text-align: center;
+    left: 10%;
+    top: 20%;
+    font-family: 'Allerta', sans-serif;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000;
+    margin: auto;
+    position: absolute;
+    background-color: #000;
+}
+
+.titleContainer{
+    transition-delay: .3s; 
+    transform: translateY(80px);
+    transition: transform .3s,opacity .3s; 
+    color: #FFF;
+}
+
+#test{
+    opacity: 0;
 }
 
 @keyframes slideUp {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(50%);
+        -webkit-transform: translateX(-100%);
     } 
     50% {
         opacity: 0.5;
-        -webkit-transform: translateY(0%);
+        -webkit-transform: translateX(0%);
     }
     100% {
         opacity: 1;
-        -webkit-transform: translateY(0%);
+        -webkit-transform: translateX(0%);
     }
 }
 
 @-webkit-keyframes slideUp {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(50%);
+        -webkit-transform: translateX(-100%);
     } 
     50% {
         opacity: 0.5;
-        -webkit-transform: translateY(0%);
+        -webkit-transform: translateX(0%);
     }
     100% {
         opacity: 1;
-        -webkit-transform: translateY(0%);
+        -webkit-transform: translateX(0%);
     }
 }
 
@@ -191,4 +211,14 @@ nav#primary a:hover, nav#primary a.active {
 .button5:hover {
     background-color: black;
     color: white;
+}
+
+#scrolltop {
+    z-index:9999;
+    color: #FFF;
+    font-family: georgia; 
+}
+
+.scrolltop {
+ display:none;
 }
