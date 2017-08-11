@@ -43,7 +43,7 @@ function myFunction() {
 }*/
 
 $(window).scroll(function() {
-  if ($(this).scrollTop()> 100) {
+  if ($(this).scrollTop()> 400) {
     $('.scrolltop').fadeIn();
    } else {
     $('.scrolltop').fadeOut();

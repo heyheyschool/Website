@@ -73,30 +73,11 @@ body, html {
 }
 
 .blackContent{
-        width: 80%;
-    height: 60%;
-    font-size: 20px;
-    text-align: center;
-    left: 10%;
-    top: 20%;
-    font-family: 'Allerta', sans-serif;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #000;
+    width: 50%;
+    height: 100%;
     margin: auto;
     position: absolute;
     background-color: #000;
-}
-
-.titleContainer{
-    transition-delay: .3s; 
-    transform: translateY(80px);
-    transition: transform .3s,opacity .3s; 
-    color: #FFF;
-}
-
-#test{
-    opacity: 0;
 }
 
 @keyframes slideUp {
@@ -216,7 +197,9 @@ nav#primary a:hover, nav#primary a.active {
 #scrolltop {
     z-index:9999;
     color: #FFF;
-    font-family: georgia; 
+    font-family: 'Fauna One', serif;
+    padding-left: 20px;
+    font-size: 40px;
 }
 
 .scrolltop {
